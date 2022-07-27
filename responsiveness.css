@@ -63,3 +63,28 @@
         width: 35vw;
     }
 }
+@media (max-width: 750px) {
+    .play_area{
+        width: 70vw;
+    }
+    .play_box{
+        width: 17vw;
+    }
+    .parent {
+        width: 51vw;
+    }
+    .modal, .escape_alert{
+        width: 50vw;
+        transform: translateX(25vw);
+    }
+    .winner_popup_wrapper{
+        transform: translateX(17vw);
+    }
+    .winner_Popup{
+        width: 65vw;
+    }
+    .game_over_txt{
+        left: -9vw;
+        width: 40vw;
+    }
+}
