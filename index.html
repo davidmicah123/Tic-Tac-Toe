@@ -9,7 +9,46 @@
     <link rel="stylesheet" href="responsiveness.css">
   </head>
   <body>
-    
+    <main>
+      <button class="btn_start">Start Game</button>
+      <div class="escape_alert">
+        <p>Press Esc. to exit/close popup</p>
+      </div>
+      <div class="modal">
+        <p></p>
+        <form action="">
+          <label for="label1">Player X:</label>
+          <input type="text" class="player1" id="label1" autocomplete="off" />
+          <label for="label2">Player Y:</label>
+          <input type="text" class="player2" id="label2" autocomplete="off" />
+          <p style="text-align: center">
+            <button class="main_start">Start</button>
+          </p>
+        </form>
+      </div>
+      <div class="play_area">
+        <div class="btn_div">
+          <button class="player_X btn1">Player 1: X</button>
+          <button class="player_O btn2">Player 1: O</button>
+        </div>
+
+        <div class="parent">
+          <div class="play_box box1" contenteditable="false"></div>
+          <div class="play_box box2" contenteditable="false"></div>
+          <div class="play_box box3" contenteditable="false"></div>
+          <div class="play_box box4" contenteditable="false"></div>
+          <div class="play_box box5" contenteditable="false"></div>
+          <div class="play_box box6" contenteditable="false"></div>
+          <div class="play_box box7" contenteditable="false"></div>
+          <div class="play_box box8" contenteditable="false"></div>
+          <div class="play_box box9" contenteditable="false"></div>
+        </div>
+      </div>
+
+      
+
+      <div class="overlay"></div>
+    </main>
 
     <script src="script.js"></script>
   </body>
