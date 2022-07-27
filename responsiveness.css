@@ -88,3 +88,20 @@
         width: 40vw;
     }
 }
+
+
+@media (max-width: 650px) {
+    .modal, .escape_alert{
+        width: 55vw;
+        transform: translateX(22vw);
+    }
+    .winner_popup_wrapper{
+        transform: translateX(13vw);
+    }
+    .winner_Popup{
+        width: 75vw;
+    }
+    .game_over_txt{
+        width: 45vw;
+    }
+}
