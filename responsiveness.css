@@ -163,3 +163,40 @@
         width: 75vw;
     }
 }
+
+@media (max-width: 450px) {
+    .play_area{
+        width: 90vw;
+    }
+    .play_box{
+        width: 30vw;
+        height: 17vh;
+    }
+    .parent {
+        width: 90vw;
+    }    
+    .modal, .escape_alert{
+        width: 75vw;
+        transform: translateX(12.5vw);
+    }
+    
+    .game_over_txt{
+        width: 67vw;
+    }
+}
+@media (max-width: 370px) {
+    .play_area{
+        width: 95vw;
+    }
+    .parent {
+        width: 96vw;
+    }
+    .play_box{
+        width: 32vw;
+        height: 17vh;
+    }
+    .modal, .escape_alert{
+        width: 85vw;
+        transform: translateX(7.5vw);
+    }
+}
