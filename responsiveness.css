@@ -133,3 +133,33 @@
         width: 45vw;
     }
 }
+
+@media (max-width: 550px) {
+    .game_over_txt{
+        width: 60vw;
+        left: -14vw;
+        margin-top: 2vh;
+    }
+    
+    .modal, .escape_alert{
+        width: 65vw;
+        transform: translateX(17vw);
+    }
+    .winner_popup_wrapper{
+        transform: translateX(5vw);
+    }
+    .winner_Popup{
+        width: 90vw;
+    }
+}
+@media (max-width: 500px) {
+    .play_area{
+        width: 90vw;
+    }
+    .play_box{
+        width: 25vw;
+    }
+    .parent {
+        width: 75vw;
+    }
+}
