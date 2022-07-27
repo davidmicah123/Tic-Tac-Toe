@@ -1,1 +1,37 @@
-
+@media (max-width: 1000px) {
+    .play_area{
+        width: 50vw;
+    }
+    .parent {
+        width: 36vw;
+    }
+    .play_box{
+        width: 12vw;
+    }
+    .btn_div{
+        width: 100%;
+        justify-content: center;
+    }
+    /* .btn1, .btn2{
+        width: 20vw;
+    } */
+    .modal, .escape_alert{
+        width: 40vw;
+        transform: translateX(30vw);
+    }
+    .player1, .player2{
+        width: 100%;
+        left: 30%;
+    }
+    .winner_popup_wrapper{
+        transform: translateX(22.5vw);
+    }
+    .winner_Popup{
+        width: 55vw;
+    }
+    .game_over_txt{
+        left: -7vw;
+        /* top: 1vh; */
+        width: 30vw;
+    }
+}
