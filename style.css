@@ -70,3 +70,44 @@ const startedGame = function () {
     escapeAlert.classList.remove('hidden')
 }
 satrtGame.addEventListener('click', startedGame);
+
+mainStart.addEventListener('click', 
+    (e) => {
+        e.preventDefault();
+        if (label1.value != ''  && label2.value != '') {
+            // satrtGame.removeEventListener('click', startedGame)
+            playing_X.innerHTML = `${label1.value}`;
+            playing_O.innerHTML = `${label2.value}`;
+            // modalWindow.style.display = "none";
+            // modalWindow.classList.add('hidden')//.display = "none";
+            overlay.classList.remove('overlay')
+            modalWindow.classList.remove('show');
+            escapeAlert.style.display = 'none';
+            console.log(100111)
+        }
+    }
+);
+
+
+// document.addEventListener('keydown', function (e) {
+//     if (e.key === 'Escape' && modalWindow.classList.contains('show')) {
+//         modalWindow.style.display = "none";
+//         escapeAlert.classList.add('hidden');
+//         overlay.classList.remove('overlay');
+//     }
+// })
+
+
+    // if (modalWindow.classList.contains('show')) {
+    //     document.addEventListener('click', 
+    //         function (e) {
+    //             if (e.target != modalWindow) {
+    //                 overlay.classList.remove('overlay')
+    //                 modalWindow.classList.add('hidden');
+    //             }
+    //         }
+    //     );
+    // }
+
+
+// makeActive(playing_X)
