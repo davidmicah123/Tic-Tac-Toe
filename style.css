@@ -225,3 +225,40 @@ const insertDraw = function () {
     win.style.display = 'block';
     winnerNameArea.innerHTML = `Both players draw`;
 }
+
+
+const checkWinner = function (box1, box2, box3) {
+    if (box1.textContent === 'X' && box2.textContent === 'X' && box3.textContent === 'X') {
+        insertWinner(`${playing_X.textContent}`)
+        console.log(`player X wins`);
+    }else if (box4.textContent === 'X' && box5.textContent === 'X' && box6.textContent === 'X') {
+        // body.insertAdjacentHTML('beforeend', insertWinner(`${playing_X.textContent}`));
+        insertWinner(`${playing_X.textContent}`)
+        console.log(`player X wins`);
+    }else if (box7.textContent === 'X' && box8.textContent === 'X' && box9.textContent === 'X') {
+        insertWinner(`${playing_X.textContent}`)
+        console.log(`player X wins`);
+    }else if (box1.textContent === 'X' && box4.textContent === 'X' && box7.textContent === 'X') {
+        insertWinner(`${playing_X.textContent}`)
+        console.log(`player X wins`);
+    }else if (box2.textContent === 'X' && box5.textContent === 'X' && box8.textContent === 'X') {
+        insertWinner(`${playing_X.textContent}`)
+        console.log(`player X wins`);
+    }else if (box3.textContent === 'X' && box6.textContent === 'X' && box9.textContent === 'X') {
+        insertWinner(`${playing_X.textContent}`)
+        console.log(`player X wins`);
+    }else if (box1.textContent === 'X' && box5.textContent === 'X' && box9.textContent === 'X') {
+        insertWinner(`${playing_X.textContent}`)
+        console.log(`player X wins`);
+    }else if (box3.textContent === 'X' && box5.textContent === 'X' && box7.textContent === 'X') {
+        insertWinner(`${playing_X.textContent}`)
+        console.log(`player X wins`);
+    }else if (box1.textContent === 'O' && box2.textContent === 'O' && box3.textContent === 'O') {
+        insertWinner(`${playing_O.textContent}`)
+        console.log(`player O wins`);
+    }else if (box4.textContent === 'O' && box5.textContent === 'O' && box6.textContent === 'O') {
+        insertWinner(`${playing_O.textContent}`)
+        console.log(`player O wins`);
+    }else if (box7.textContent === 'O' && box8.textContent === 'O' && box9.textContent === 'O') {
+        insertWinner(`${playing_O.textContent}`)
+        console.log(`player O wins`);
