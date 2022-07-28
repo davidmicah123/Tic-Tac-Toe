@@ -29,3 +29,47 @@ body{
     display: flex;
     justify-content: space-around;
 }
+
+.parent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 24vw;
+    background-color: hsl(174deg 81% 41%);
+    align-self: center;
+}
+.play_box{
+    border: 1px solid black;
+    width: 8vw;
+    height: 14vh;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    /* color: white; */
+    border-radius: 0;
+    color: hsl(174deg 81% 41%);
+}
+.btn1, .btn2{
+    padding: 2vh 2vw;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.05rem;
+    border-radius: 2rem;
+    margin: 1vh 0;
+    opacity: 0.5;
+}
+
+.btn_start{
+    padding: 2vh 2vw;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.05rem;
+    border-radius: 2rem;
+    margin: 1vh 1vw;
+    position: fixed;
+    top: 0;
+}
