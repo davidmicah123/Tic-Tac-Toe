@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: green; */
+}
+/* body{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+} */
+.hidden{
+    display: none;
+}
+.show{
+    display: block;
+}
+.play_area{
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20vh auto;
+}
+.btn_div{
+    display: flex;
+    justify-content: space-around;
+}
