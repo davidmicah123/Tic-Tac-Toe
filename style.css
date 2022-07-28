@@ -262,3 +262,28 @@ const checkWinner = function (box1, box2, box3) {
     }else if (box7.textContent === 'O' && box8.textContent === 'O' && box9.textContent === 'O') {
         insertWinner(`${playing_O.textContent}`)
         console.log(`player O wins`);
+    }else if (box1.textContent === 'O' && box4.textContent === 'O' && box7.textContent === 'O') {
+        insertWinner(`${playing_O.textContent}`)
+        console.log(`player O wins`);
+    }else if (box2.textContent === 'O' && box5.textContent === 'O' && box8.textContent === 'O') {
+        insertWinner(`${playing_O.textContent}`)
+        console.log(`player O wins`);
+    }else if (box3.textContent === 'O' && box6.textContent === 'O' && box9.textContent === 'O') {
+        insertWinner(`${playing_O.textContent}`)
+        console.log(`player O wins`);
+    }else if (box1.textContent === 'O' && box5.textContent === 'X' && box9.textContent === 'O') {
+        // body.insertAdjacentHTML('beforeend', insertWinner(`${playing_O.textContent}`));
+        insertWinner(`${playing_O.textContent}`)
+        console.log(`player X wins`);
+    }else if (box3.textContent === 'O' && box5.textContent === 'X' && box7.textContent === 'O') {
+        insertWinner(`${playing_O.textContent}`)
+        console.log(`player X wins`);
+    }else if (box1.textContent != '' && box2.textContent != '' && box3.textContent != '' && box4.textContent != '' && box5.textContent != '' && box6.textContent != '' && box7.textContent != '' && box8.textContent != '' && box8.textContent != '') {
+        // body.insertAdjacentHTML('beforeend', draw);
+        insertDraw();
+        overlay.classList.add('overlay');
+        console.log(`player draws`);
+    }else{
+        console.log(1);
+    }
+}
