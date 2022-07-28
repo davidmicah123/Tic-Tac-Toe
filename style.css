@@ -24,3 +24,23 @@
 // };
 
 // request.send();
+
+const satrtGame = document.querySelector('.btn_start');
+const playing_X = document.querySelector('.player_X');
+const playing_O = document.querySelector('.player_O');
+const modalWindow = document.querySelector('.modal');
+const overlay = document.querySelector('.overlay')
+const btn1 = document.querySelector('.btn1');
+const btn2 = document.querySelector('.btn2');
+const mainStart = document.querySelector('.main_start');
+const escapeAlert = document.querySelector('.escape_alert');
+const body = document.querySelector('body')
+escapeAlert.classList.add('hidden')
+let state1 = 'not clicked';
+let state2 = 'not clicked';
+const label1 = document.querySelector('.player1')
+const label2 = document.querySelector('.player2')
+const win = document.querySelector('.winner_popup_wrapper');
+const winnerNameArea = document.querySelector('.winnerNameArea')
+const playAgain = document.querySelector('.play_again');
+
