@@ -287,3 +287,35 @@ const checkWinner = function (box1, box2, box3) {
         console.log(1);
     }
 }
+
+setInterval(() => {
+    checkWinner(box1, box2, box3);
+}, 1000);
+
+// const winnerPopupWrapper = document.querySelector('.winner_popup_wrapper')
+
+// winnerPopupWrapper.addEventListener('click', 
+//     () => {
+//         state1 = 'not clicked';
+//         state2 = 'not clicked';
+//         label1.value = label2.value = '';
+//         box1.value = box2.value = box3.value = box4.value = box5.value = box6.value = box7.value = box8.value = box9.value = '';
+//         // body.parentNode.removeChild(insertWinner(`${playing_O.textContent}`));
+//         winnerPopupWrapper.style.display = 'none'
+//     }
+// );
+playAgain.addEventListener('click',  
+    () => {
+        state1 = 'not clicked';
+        state2 = 'not clicked';
+        // label1.value = label2.value = '';
+        box1.textContent = box2.textContent = box3.textContent = box4.textContent = box5.textContent = box6.textContent = box7.textContent = box8.textContent = box9.textContent = '';
+        overlay.classList.remove('overlay');
+        win.style.display = 'none'
+        playing_O.style.display = `block`;
+        playing_X.style.display = `block`;
+        startedGame();
+        // box.style.Color = 'white';
+        // box.style.backgroundColor = 'hsl(174deg 81% 41%)';
+    }
+);
