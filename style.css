@@ -44,3 +44,29 @@ const win = document.querySelector('.winner_popup_wrapper');
 const winnerNameArea = document.querySelector('.winnerNameArea')
 const playAgain = document.querySelector('.play_again');
 
+
+const addStyle = function (box) {
+    box.style.backgroundColor = 'white';
+    box.style.Color = 'hsl(174deg 81% 41%)';
+}
+const addBtnState = function(btn){
+    btn.classList.add('active_state');
+}
+const removeBtnState = function(btn){
+    btn.classList.remove('active_state');
+}
+const makeActive = function (btn) {
+    btn.style.opacity = `1`;
+}
+modalWindow.classList.add('hidden')
+overlay.classList.remove('overlay')
+const startedGame = function () {
+    makeActive(btn1);
+    makeActive(btn2);
+    overlay.classList.add('overlay')
+    modalWindow.classList.add('show');
+    modalWindow.classList.remove('hidde');
+    label1.focus()
+    escapeAlert.classList.remove('hidden')
+}
+satrtGame.addEventListener('click', startedGame);
