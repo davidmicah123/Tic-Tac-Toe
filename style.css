@@ -73,3 +73,39 @@ body{
     position: fixed;
     top: 0;
 }
+
+.main_start{
+    padding: 2vh 2vw;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.05rem;
+    border-radius: 2rem;
+    margin: 1vh auto;
+    margin-bottom: 0;
+    border: 2px solid white;
+}
+.active_state{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    transform: translateY(-2vh);
+}
+.modal{
+    position: fixed;
+    background-color: black;
+    color: white;
+    padding: 3vh;
+    border-radius: 0.5rem;
+    transform: translateX(37vw);
+    top: 30%;
+    z-index: 100 !important;
+    box-shadow: 0 12px 24px black;
+    opacity: 100 !important;
+}
+.player1, .player2{
+    display: block;
+    width: 25vw;
+    padding: 1vh 0.5vw;
+    margin: 1vh 0;
+}
