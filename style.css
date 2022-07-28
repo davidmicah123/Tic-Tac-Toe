@@ -111,3 +111,33 @@ mainStart.addEventListener('click',
 
 
 // makeActive(playing_X)
+
+playing_X.addEventListener('click', 
+    function (btn) {
+        addBtnState(btn1);
+        removeBtnState(btn2);
+        btn.preventDefault();
+        state1 = 'clicked';
+        state2 = 'not clicked';
+        // console.log(`state1: ${state1}`)
+        // console.log(`state2: ${state2}`)
+        playing_O.style.display = `none`;
+        parent.addEventListener('click',
+            function (e) {
+                e.preventDefault();
+                let target = e.target;
+                addStyle(target);
+                console.log(target.textContent)
+                if (target.textContent === '') {
+                    if (state1 === 'clicked') {
+                        console.log(`empty`);
+                        target.textContent = 'X';
+                        // removeBtnState(btn1);
+                        playing_X.style.display = `none`;
+                        playing_O.style.display = `block`;
+                    }
+                }
+            }
+        );
+    }
+);
