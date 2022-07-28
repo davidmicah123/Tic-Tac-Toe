@@ -141,3 +141,34 @@ playing_X.addEventListener('click',
         );
     }
 );
+
+
+playing_O.addEventListener('click', 
+    function (btn) {
+        addBtnState(btn2);
+        removeBtnState(btn1);
+        btn.preventDefault();
+        state1 = 'not clicked';
+        state2 = 'clicked';
+        console.log(`state1: ${state1}`)
+        console.log(`state2: ${state2}`)
+        playing_X.style.display = `none`;
+        parent.addEventListener('click',
+            function (e) {
+                e.preventDefault();
+                let target = e.target;
+                addStyle(target);
+                console.log(target.textContent)
+                if (target.textContent === '') {
+                    if (state2 === 'clicked') {
+                        console.log(`empty`)
+                        target.textContent = 'O';
+                        removeBtnState(btn2);
+                        playing_O.style.display = `none`;
+                        playing_X.style.display = `block`;
+                    }
+                }
+            }
+        );
+    }
+);
