@@ -201,3 +201,27 @@ let box6 = document.querySelector('.box6');
 let box7 = document.querySelector('.box7');
 let box8 = document.querySelector('.box8');
 let box9 = document.querySelector('.box9');
+
+
+const insertWinner = function (winnerName) {
+    escapeAlert.style.display = 'none';
+    overlay.classList.add('overlay');
+    win.style.display = 'block';
+    winnerNameArea.innerHTML = `${winnerName} wins the game`;
+    return win;
+}
+// const draw  = `
+//     <div class="winner_popup_wrapper2">
+//         <div class="winner_Popup">
+//             <p class="game_over_txt">Game over</p>
+//             <img src="img/throphy-removebg-preview.png" alt="">
+//             <p>Both player draws</p>
+//             <button class="play_again">Play Again</button>
+//         </div>
+//     </div>
+// `;
+
+const insertDraw = function () {
+    win.style.display = 'block';
+    winnerNameArea.innerHTML = `Both players draw`;
+}
